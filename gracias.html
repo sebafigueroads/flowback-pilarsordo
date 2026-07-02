@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="es-CL">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>Estás dentro · Flowback × Pilar Sordo</title>
+<meta name="description" content="Confirmación de inscripción al programa Flowback × Pilar Sordo. Únete al grupo de WhatsApp y comienza tu viaje.">
+<meta name="robots" content="noindex, nofollow">
+<meta name="theme-color" content="#0d0d0d">
+<link rel="icon" type="image/png" href="assets/logos/flowback-logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Josefin+Sans:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#0a0a0a;
+  --paper:#f6f1e8;
+  --lime:#9ACC2B;
+  --peach:#F9C475;
+  --terracotta:#c96a3a;
+  --line:rgba(255,255,255,.08);
+  --f-display:'Cormorant Garamond', Georgia, serif;
+  --f-sans:'Poppins', -apple-system, sans-serif;
+  --f-alt:'Josefin Sans', 'Poppins', sans-serif;
+  --ease:cubic-bezier(.2,.7,.15,1);
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html,body{overflow-x:hidden;max-width:100vw;background:var(--ink)}
+body{
+  background:var(--ink);color:var(--paper);
+  font-family:var(--f-sans);font-size:16px;line-height:1.62;
+  -webkit-font-smoothing:antialiased;
+  min-height:100vh;position:relative;
+}
+img,video{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+
+/* GRAIN */
+.grain{position:fixed;inset:0;z-index:998;pointer-events:none;opacity:.14;mix-blend-mode:overlay;background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='140' height='140' viewBox='0 0 140 140'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='.92' numOctaves='3' stitchTiles='stitch'/></filter><rect width='140' height='140' filter='url(%23n)' opacity='.55'/></svg>")}
+
+/* BG glow */
+body::before{content:'';position:fixed;inset:0;z-index:0;pointer-events:none;background:radial-gradient(ellipse 50% 40% at 50% 30%,rgba(154,204,43,.10),transparent 60%),radial-gradient(ellipse 40% 30% at 20% 80%,rgba(201,106,58,.08),transparent 60%)}
+
+/* NAV */
+.nav{position:fixed;top:0;left:0;right:0;z-index:100;padding:22px 32px;display:flex;align-items:center;justify-content:center;background:rgba(10,10,10,.65);backdrop-filter:blur(20px);border-bottom:1px solid var(--line)}
+.nav img{height:24px;filter:brightness(0) invert(1);opacity:.9}
+@media(max-width:640px){ .nav{padding:16px 20px} .nav img{height:20px} }
+
+/* HERO */
+.wrap{max-width:820px;margin:0 auto;padding:180px 32px 80px;text-align:center;position:relative;z-index:2}
+@media(max-width:640px){ .wrap{padding:130px 22px 60px} }
+
+.badge{display:inline-flex;align-items:center;gap:12px;background:rgba(154,204,43,.10);border:1px solid rgba(154,204,43,.35);border-radius:100px;padding:10px 22px;font-family:var(--f-alt);font-weight:500;font-size:.72rem;letter-spacing:.28em;text-transform:uppercase;color:var(--lime);margin-bottom:36px;animation:fadeUp 1s var(--ease) .1s both}
+.badge svg{width:14px;height:14px;fill:none;stroke:currentColor;stroke-width:2.5;stroke-linecap:round;stroke-linejoin:round}
+
+h1{font-family:var(--f-display);font-weight:400;font-size:clamp(2.6rem,7vw,5.4rem);line-height:1;letter-spacing:-.024em;color:#fff;margin-bottom:28px;animation:fadeUp 1s var(--ease) .2s both}
+h1 em{font-style:italic;font-weight:300;color:var(--peach)}
+.hero-sub{font-family:var(--f-sans);font-weight:300;font-size:clamp(1.05rem,1.4vw,1.24rem);line-height:1.55;color:rgba(246,241,232,.86);max-width:52ch;margin:0 auto 60px;animation:fadeUp 1s var(--ease) .3s both}
+
+/* WA card */
+.wa-card{background:linear-gradient(135deg,rgba(37,211,102,.10),rgba(37,211,102,.04));border:1px solid rgba(37,211,102,.4);border-radius:12px;padding:44px 36px;position:relative;overflow:hidden;animation:fadeUp 1s var(--ease) .4s both}
+.wa-card::before{content:'';position:absolute;top:-40%;right:-20%;width:60%;height:180%;background:radial-gradient(circle,rgba(37,211,102,.14),transparent 60%);pointer-events:none}
+.wa-icon{width:64px;height:64px;border-radius:50%;background:#25D366;display:grid;place-items:center;margin:0 auto 20px;position:relative;box-shadow:0 12px 40px rgba(37,211,102,.4);animation:pulseWA 2.6s ease-in-out infinite}
+@keyframes pulseWA{0%,100%{box-shadow:0 12px 40px rgba(37,211,102,.4),0 0 0 0 rgba(37,211,102,.4)}50%{box-shadow:0 12px 40px rgba(37,211,102,.4),0 0 0 18px rgba(37,211,102,0)}}
+.wa-icon svg{width:34px;height:34px;fill:#fff}
+.wa-title{font-family:var(--f-display);font-weight:500;font-size:clamp(1.6rem,3vw,2.2rem);line-height:1.15;color:#fff;margin-bottom:14px}
+.wa-title em{font-style:italic;font-weight:400;color:var(--peach)}
+.wa-desc{font-family:var(--f-sans);font-weight:300;font-size:1rem;line-height:1.6;color:rgba(246,241,232,.78);margin-bottom:32px;max-width:44ch;margin-left:auto;margin-right:auto}
+.wa-cta{display:inline-flex;align-items:center;gap:14px;background:#25D366;color:#fff;padding:22px 40px;border-radius:100px;font-family:var(--f-alt);font-weight:700;font-size:.86rem;letter-spacing:.2em;text-transform:uppercase;transition:.4s var(--ease);box-shadow:0 20px 50px rgba(37,211,102,.3)}
+.wa-cta:hover{background:#20b855;transform:translateY(-2px);box-shadow:0 26px 60px rgba(37,211,102,.5)}
+.wa-cta svg{width:20px;height:20px;fill:currentColor}
+.wa-fine{margin-top:20px;font-family:var(--f-alt);font-size:.66rem;letter-spacing:.22em;text-transform:uppercase;color:rgba(246,241,232,.44)}
+
+/* QUE SIGUE */
+.next{margin-top:100px;text-align:left;animation:fadeUp 1s var(--ease) .55s both}
+.next-title{font-family:var(--f-display);font-weight:400;font-style:italic;font-size:clamp(1.6rem,3vw,2.2rem);line-height:1.1;color:#fff;margin-bottom:36px;text-align:center}
+.steps{list-style:none;display:flex;flex-direction:column;gap:0;background:rgba(246,241,232,.02);border:1px solid var(--line);border-radius:8px;overflow:hidden}
+.step{padding:26px 28px;border-bottom:1px solid var(--line);display:flex;gap:22px;align-items:flex-start;transition:.4s ease;position:relative}
+.step:last-child{border-bottom:0}
+.step:hover{background:rgba(246,241,232,.04)}
+.step-num{flex-shrink:0;width:38px;height:38px;border-radius:50%;background:rgba(154,204,43,.10);border:1px solid rgba(154,204,43,.4);color:var(--lime);display:grid;place-items:center;font-family:var(--f-display);font-style:italic;font-size:1.15rem;font-weight:500}
+.step-body strong{display:block;font-family:var(--f-alt);font-weight:600;font-size:.86rem;letter-spacing:.14em;text-transform:uppercase;color:#fff;margin-bottom:6px}
+.step-body p{font-family:var(--f-sans);font-weight:300;font-size:.98rem;line-height:1.55;color:rgba(246,241,232,.7)}
+
+/* FOOTER */
+.foot{padding:60px 32px 40px;text-align:center;border-top:1px solid var(--line);margin-top:80px;position:relative;z-index:2}
+.foot p{font-family:var(--f-alt);font-size:.66rem;letter-spacing:.26em;text-transform:uppercase;color:rgba(246,241,232,.35);line-height:1.9}
+.foot p a{color:var(--lime)}
+.foot p a:hover{color:#fff}
+.foot .rrss{display:flex;justify-content:center;gap:16px;margin-top:20px}
+.foot .rrss a{width:36px;height:36px;border-radius:50%;border:1px solid rgba(246,241,232,.16);display:grid;place-items:center;color:rgba(246,241,232,.6);transition:.3s ease}
+.foot .rrss a:hover{background:var(--lime);color:var(--ink);border-color:var(--lime);transform:translateY(-2px)}
+.foot .rrss svg{width:16px;height:16px;fill:currentColor}
+
+@keyframes fadeUp{from{opacity:0;transform:translateY(24px)}to{opacity:1;transform:none}}
+::selection{background:var(--lime);color:var(--ink)}
+</style>
+</head>
+<body>
+
+<div class="grain"></div>
+
+<nav class="nav"><img src="assets/logos/flowback-logo.png" alt="Flowback"></nav>
+
+<main class="wrap">
+  <div class="badge">
+    <svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
+    Estás dentro
+  </div>
+
+  <h1>Nos vemos <em>al otro lado</em>.</h1>
+  <p class="hero-sub">Acabas de dar el primer paso. Ahora falta solo una cosa — únete al grupo de WhatsApp donde durante los próximos días vas a recibir contenido diario que te va a preparar para el taller en vivo.</p>
+
+  <!-- WA CARD -->
+  <div class="wa-card">
+    <div class="wa-icon">
+      <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+    </div>
+    <div class="wa-title">Únete al grupo <em>ahora</em></div>
+    <p class="wa-desc">En el grupo vas a recibir movimiento del día, meditación, recetas antiinflamatorias y las coordenadas del taller en vivo. Cero spam. Cero ruido. Puro cuidado.</p>
+    <a href="https://chat.whatsapp.com/PLACEHOLDER_GROUP_LINK" target="_blank" rel="noopener" class="wa-cta" id="waBtn">
+      <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+      Entrar al grupo de WhatsApp
+    </a>
+    <div class="wa-fine">Abre en WhatsApp · +56 9 7590 5158</div>
+  </div>
+
+  <!-- QUE SIGUE -->
+  <section class="next">
+    <div class="next-title">Qué sigue durante los <em>próximos días</em></div>
+    <ul class="steps">
+      <li class="step">
+        <div class="step-num">01</div>
+        <div class="step-body">
+          <strong>Hoy · Un mensaje de bienvenida</strong>
+          <p>Recibirás en el grupo un audio de Jimmy explicándote qué va a pasar y por qué este programa se armó junto a Pilar. Tres minutos, escúchalo con calma cuando puedas.</p>
+        </div>
+      </li>
+      <li class="step">
+        <div class="step-num">02</div>
+        <div class="step-body">
+          <strong>Cada mañana · Movimiento del día</strong>
+          <p>Una práctica corta (10–15 min) para que empieces a habitar tu cuerpo desde hoy. Puedes hacerla acostada, sentada, o en la cocina mientras se hace el café.</p>
+        </div>
+      </li>
+      <li class="step">
+        <div class="step-num">03</div>
+        <div class="step-body">
+          <strong>Al final del ciclo · Taller en vivo</strong>
+          <p>Un encuentro live con Jimmy, Kira y Pilar donde vamos a abrir el programa oficial de 3 meses. Ahí conoces la propuesta completa y decides con calma si te sumas.</p>
+        </div>
+      </li>
+    </ul>
+  </section>
+</main>
+
+<footer class="foot">
+  <p>© 2026 Flowback Fitness · Programa lanzamiento junto a Pilar Sordo<br>
+  Desarrollado por <a href="https://digitals.cl" target="_blank" rel="noopener">Digitals</a></p>
+  <div class="rrss">
+    <a href="https://www.instagram.com/flowback_fitness/" target="_blank" rel="noopener" aria-label="Instagram Flowback">
+      <svg viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+    </a>
+    <a href="https://www.youtube.com/channel/UCthyUuOaHJfFtGBnIl_7AIQ/videos" target="_blank" rel="noopener" aria-label="YouTube Flowback">
+      <svg viewBox="0 0 24 24"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+    </a>
+  </div>
+</footer>
+
+<script>
+/* Cargar el link real del grupo desde sessionStorage si viene inyectado, sino queda el placeholder */
+(function(){
+  try{
+    var lead=JSON.parse(sessionStorage.getItem('fbps_lead')||'{}');
+    if(lead && Object.keys(lead).length){
+      console.log('[Flowback×Pilar] Lead confirmado:', lead.email);
+      /* Aquí eventualmente: enviarlo al backend / GHL / Hapee para el opt-in */
+    }
+  }catch(e){}
+})();
+</script>
+
+</body>
+</html>

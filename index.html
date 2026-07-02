@@ -1,0 +1,650 @@
+<!DOCTYPE html>
+<html lang="es-CL">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>Flowback × Pilar Sordo — Cuerpo, palabra y presencia. Un programa de 3 meses.</title>
+<meta name="description" content="Un encuentro entre el movimiento consciente de Flowback y el diálogo interno de Pilar Sordo. 3 meses para habitar tu cuerpo y sanar cómo te hablas. Cupos limitados.">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<meta name="theme-color" content="#0d0d0d">
+<link rel="canonical" href="https://flowback-pilarsordo.digitalsagencia.cl/">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="es_CL">
+<meta property="og:title" content="Flowback × Pilar Sordo — Un programa de cuerpo y palabra">
+<meta property="og:description" content="3 meses para habitar tu cuerpo y sanar cómo te hablas. Movimiento consciente + diálogo interno. Cupos limitados.">
+<meta property="og:image" content="https://flowback-pilarsordo.digitalsagencia.cl/assets/img/women-flow.jpg">
+<link rel="icon" type="image/png" href="assets/logos/flowback-logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=Josefin+Sans:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<script>
+  (function(){
+    var params = new URLSearchParams(location.search);
+    var utm = {};
+    ['utm_source','utm_medium','utm_campaign','utm_content','utm_term','fbclid','gclid'].forEach(function(k){
+      if(params.get(k)) utm[k] = params.get(k);
+    });
+    if(Object.keys(utm).length){ try{ sessionStorage.setItem('fbps_attrib', JSON.stringify(utm)); }catch(e){} }
+  })();
+</script>
+
+<style>
+:root{
+  --ink:#0a0a0a;
+  --paper:#f6f1e8;
+  --cream:#efe6d5;
+  --lime:#9ACC2B;
+  --lime-2:#b3e04a;
+  --earth:#683E0E;
+  --terracotta:#c96a3a;
+  --sand:#DDAE85;
+  --peach:#F9C475;
+  --muted:#8a8072;
+  --line:rgba(255,255,255,.08);
+  --line-dark:rgba(0,0,0,.10);
+  --f-display:'Cormorant Garamond', Georgia, serif;
+  --f-sans:'Poppins', -apple-system, sans-serif;
+  --f-alt:'Josefin Sans', 'Poppins', sans-serif;
+  --ease:cubic-bezier(.2,.7,.15,1);
+  --tr:.5s var(--ease);
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html,body{overflow-x:hidden;max-width:100vw}
+html{scroll-behavior:smooth;background:var(--ink)}
+body{
+  background:var(--ink); color:var(--paper);
+  font-family:var(--f-sans); font-size:16px; line-height:1.62;
+  -webkit-font-smoothing:antialiased; text-rendering:geometricPrecision;
+  min-height:100vh; overflow-x:hidden;
+}
+img,video{max-width:100%; display:block}
+a{color:inherit; text-decoration:none}
+button{font:inherit; color:inherit; background:none; border:0; cursor:pointer}
+
+/* ============================================================
+   PRELOADER · brand reveal
+   ============================================================ */
+.pre{position:fixed;inset:0;z-index:9999;background:#0a0a0a;display:grid;place-items:center;transition:opacity .8s var(--ease),visibility .8s}
+.pre.is-out{opacity:0;visibility:hidden;pointer-events:none}
+.pre::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse 50% 40% at 50% 60%,rgba(154,204,43,.14),transparent 60%);pointer-events:none}
+.pre-stack{position:relative;display:flex;flex-direction:column;align-items:center;gap:22px;text-align:center}
+.pre-mark{font-family:var(--f-alt);font-weight:300;font-size:.72rem;letter-spacing:.6em;text-transform:uppercase;color:rgba(246,241,232,.55)}
+.pre-title{font-family:var(--f-display);font-style:italic;font-weight:400;font-size:clamp(2.6rem,7vw,4.6rem);line-height:1;color:#fff;letter-spacing:-.02em}
+.pre-title .n{font-style:normal;color:var(--lime)}
+.pre-bar{position:relative;width:min(280px,60vw);height:1px;background:rgba(255,255,255,.10);overflow:hidden;margin-top:8px}
+.pre-bar span{position:absolute;left:0;top:0;bottom:0;width:0%;background:linear-gradient(90deg,var(--lime),#fff);box-shadow:0 0 12px rgba(154,204,43,.6);transition:width .15s linear}
+.pre-meta{font-family:var(--f-alt);font-weight:500;font-size:.6rem;letter-spacing:.36em;text-transform:uppercase;color:rgba(246,241,232,.4)}
+.pre-meta .pct{color:var(--lime);font-weight:700;margin-left:.4em}
+
+/* ============================================================
+   GRAIN + SCANLINE · texture layers
+   ============================================================ */
+.grain{position:fixed;inset:0;z-index:998;pointer-events:none;opacity:.14;mix-blend-mode:overlay;
+  background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='140' height='140' viewBox='0 0 140 140'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='.92' numOctaves='3' stitchTiles='stitch'/></filter><rect width='140' height='140' filter='url(%23n)' opacity='.55'/></svg>");
+}
+
+/* ============================================================
+   NAV · minimal editorial
+   ============================================================ */
+.nav{position:fixed;top:0;left:0;right:0;z-index:100;padding:22px 32px;display:flex;align-items:center;justify-content:space-between;transition:var(--tr);pointer-events:none}
+.nav > *{pointer-events:auto}
+.nav.sc{background:rgba(10,10,10,.72);backdrop-filter:blur(20px) saturate(140%);padding:14px 32px;border-bottom:1px solid var(--line)}
+.nav-logo{height:26px;filter:brightness(0) invert(1);opacity:.92;transition:var(--tr)}
+.nav-cta{font-family:var(--f-alt);font-weight:600;font-size:.72rem;letter-spacing:.24em;text-transform:uppercase;padding:11px 22px;border:1px solid rgba(246,241,232,.24);border-radius:100px;color:var(--paper);transition:var(--tr);white-space:nowrap}
+.nav-cta:hover{background:var(--lime);color:var(--ink);border-color:var(--lime);transform:translateY(-1px)}
+@media(max-width:640px){ .nav{padding:16px 20px} .nav.sc{padding:12px 20px} .nav-logo{height:22px} .nav-cta{font-size:.62rem;padding:9px 15px} }
+
+/* ============================================================
+   HERO · editorial gigante
+   ============================================================ */
+.hero{position:relative;min-height:100vh;display:flex;align-items:center;overflow:hidden;padding:120px 0 60px;isolation:isolate}
+.hero-bg{position:absolute;inset:0;z-index:0;overflow:hidden}
+.hero-bg img{width:100%;height:100%;object-fit:cover;object-position:center;filter:brightness(.62) saturate(1.05)}
+.hero-bg::after{content:'';position:absolute;inset:0;background:
+  linear-gradient(180deg,rgba(10,10,10,.35) 0%,transparent 30%,transparent 55%,rgba(10,10,10,.9) 100%),
+  linear-gradient(90deg,rgba(10,10,10,.6) 0%,transparent 40%,transparent 60%,rgba(10,10,10,.55) 100%);
+}
+.hero-inner{position:relative;z-index:2;width:100%;max-width:1280px;margin:0 auto;padding:0 32px}
+.hero-tag{display:inline-flex;align-items:center;gap:14px;font-family:var(--f-alt);font-weight:500;font-size:.7rem;letter-spacing:.42em;text-transform:uppercase;color:var(--lime);margin-bottom:32px}
+.hero-tag::before{content:'';width:36px;height:1px;background:var(--lime)}
+.hero h1{font-family:var(--f-display);font-weight:400;font-size:clamp(2.6rem,7.2vw,6.5rem);line-height:1;letter-spacing:-.024em;color:#fff;margin-bottom:28px;max-width:14ch}
+.hero h1 em{font-style:italic;font-weight:300;color:var(--peach)}
+.hero h1 .amp{font-style:italic;color:var(--lime);font-weight:300;margin:0 .04em}
+.hero-sub{font-family:var(--f-sans);font-weight:300;font-size:clamp(1.05rem,1.5vw,1.32rem);line-height:1.55;max-width:52ch;color:rgba(246,241,232,.86);margin-bottom:44px}
+.hero-cta-row{display:flex;flex-wrap:wrap;gap:18px;align-items:center}
+.btn{display:inline-flex;align-items:center;gap:12px;font-family:var(--f-alt);font-weight:600;font-size:.82rem;letter-spacing:.16em;text-transform:uppercase;padding:20px 36px;border-radius:100px;transition:var(--tr);position:relative;overflow:hidden;white-space:nowrap;cursor:pointer;border:1px solid transparent}
+.btn-primary{background:var(--lime);color:var(--ink)}
+.btn-primary:hover{background:#fff;transform:translateY(-2px);box-shadow:0 20px 50px rgba(154,204,43,.35)}
+.btn-ghost{background:transparent;color:var(--paper);border:1px solid rgba(246,241,232,.26)}
+.btn-ghost:hover{background:var(--paper);color:var(--ink);border-color:var(--paper)}
+.btn svg{width:16px;height:16px}
+.hero-scroll{position:absolute;bottom:32px;left:50%;transform:translateX(-50%);z-index:2;display:flex;flex-direction:column;align-items:center;gap:10px;color:rgba(246,241,232,.55)}
+.hero-scroll span{font-family:var(--f-alt);font-size:.6rem;letter-spacing:.36em;text-transform:uppercase}
+.hero-scroll .line{width:1px;height:44px;background:linear-gradient(180deg,transparent,rgba(246,241,232,.55) 40%,transparent);animation:scrollLine 2.4s ease-in-out infinite}
+@keyframes scrollLine{0%,100%{transform:scaleY(.35);transform-origin:top}50%{transform:scaleY(1);transform-origin:top}}
+
+@media(max-width:900px){ .hero-scroll{display:none} .hero{padding:100px 0 40px} }
+
+/* ============================================================
+   REVEAL system
+   ============================================================ */
+.rv{opacity:0;transform:translateY(28px);transition:opacity .9s var(--ease),transform .9s var(--ease)}
+.rv.in{opacity:1;transform:none}
+.rv-d1{transition-delay:.08s}
+.rv-d2{transition-delay:.16s}
+.rv-d3{transition-delay:.24s}
+.rv-d4{transition-delay:.32s}
+
+/* ============================================================
+   SECTIONS · shared
+   ============================================================ */
+section{position:relative}
+.sec{padding:120px 0}
+@media(max-width:900px){ .sec{padding:80px 0} }
+.wrap{max-width:1280px;margin:0 auto;padding:0 32px}
+.wrap-tight{max-width:960px;margin:0 auto;padding:0 32px}
+.kicker{display:inline-flex;align-items:center;gap:14px;font-family:var(--f-alt);font-weight:500;font-size:.68rem;letter-spacing:.42em;text-transform:uppercase;color:var(--lime);margin-bottom:22px}
+.kicker::before{content:'';width:28px;height:1px;background:var(--lime)}
+h2{font-family:var(--f-display);font-weight:400;font-size:clamp(2.2rem,4.5vw,4rem);line-height:1.02;letter-spacing:-.02em;color:#fff;margin-bottom:24px;max-width:22ch}
+h2 em{font-style:italic;color:var(--peach);font-weight:300}
+h3{font-family:var(--f-display);font-weight:500;font-size:clamp(1.4rem,2vw,1.8rem);line-height:1.15;letter-spacing:-.015em;color:#fff;margin-bottom:14px}
+h4{font-family:var(--f-alt);font-weight:500;font-size:.78rem;letter-spacing:.28em;text-transform:uppercase;color:var(--lime)}
+p.lead{font-family:var(--f-sans);font-weight:300;font-size:clamp(1.05rem,1.4vw,1.2rem);line-height:1.65;color:rgba(246,241,232,.78);max-width:56ch}
+p{font-family:var(--f-sans);font-weight:300;line-height:1.65;color:rgba(246,241,232,.72)}
+
+/* ============================================================
+   VSL · placeholder editorial
+   ============================================================ */
+.vsl{background:var(--ink);border-top:1px solid var(--line)}
+.vsl-frame{position:relative;aspect-ratio:16/9;border-radius:8px;overflow:hidden;background:#000;cursor:pointer;transition:var(--tr);border:1px solid var(--line)}
+.vsl-frame:hover{transform:scale(1.005);box-shadow:0 40px 100px rgba(0,0,0,.6),0 0 0 1px rgba(154,204,43,.4)}
+.vsl-frame img{width:100%;height:100%;object-fit:cover;filter:brightness(.55) saturate(.9)}
+.vsl-play{position:absolute;inset:0;display:grid;place-items:center;color:#fff}
+.vsl-play-inner{width:110px;height:110px;border-radius:50%;background:rgba(255,255,255,.06);backdrop-filter:blur(20px);border:1px solid rgba(255,255,255,.28);display:grid;place-items:center;transition:var(--tr);position:relative}
+.vsl-play-inner::before{content:'';position:absolute;inset:-6px;border-radius:50%;border:1px solid rgba(255,255,255,.16);animation:pulseRing 2.4s ease-in-out infinite}
+@keyframes pulseRing{0%,100%{transform:scale(1);opacity:.6}50%{transform:scale(1.14);opacity:.1}}
+.vsl-play-inner svg{width:36px;height:36px;fill:#fff;margin-left:6px}
+.vsl-frame:hover .vsl-play-inner{background:var(--lime);border-color:var(--lime)}
+.vsl-frame:hover .vsl-play-inner svg{fill:var(--ink)}
+.vsl-caption{margin-top:20px;text-align:center;font-family:var(--f-alt);font-weight:400;font-size:.72rem;letter-spacing:.32em;text-transform:uppercase;color:rgba(246,241,232,.44)}
+@media(max-width:640px){ .vsl-play-inner{width:80px;height:80px} .vsl-play-inner svg{width:24px;height:24px} }
+
+/* ============================================================
+   PROBLEMA · el dolor de la mujer 40-55
+   ============================================================ */
+.problema{background:var(--ink);border-top:1px solid var(--line)}
+.problema .wrap{display:grid;grid-template-columns:1fr 1.15fr;gap:100px;align-items:center}
+@media(max-width:900px){ .problema .wrap{grid-template-columns:1fr;gap:60px} }
+.problema-txt h2{max-width:none}
+.pain-list{list-style:none;margin-top:36px;display:flex;flex-direction:column;gap:0}
+.pain-list li{padding:22px 0;border-bottom:1px solid var(--line);display:flex;align-items:flex-start;gap:20px;font-family:var(--f-sans);font-weight:300;font-size:1.05rem;line-height:1.5;color:rgba(246,241,232,.82)}
+.pain-list li::before{content:'';width:6px;height:6px;background:var(--lime);border-radius:50%;margin-top:12px;flex-shrink:0}
+.problema-img{position:relative;aspect-ratio:4/5;border-radius:6px;overflow:hidden}
+.problema-img img{width:100%;height:100%;object-fit:cover;transform:scale(1.02);transition:transform 6s ease-out}
+.problema-img:hover img{transform:scale(1.08)}
+.problema-img::after{content:'';position:absolute;inset:0;background:linear-gradient(180deg,transparent 60%,rgba(10,10,10,.35) 100%);pointer-events:none}
+.problema-quote{position:absolute;bottom:32px;left:32px;right:32px;font-family:var(--f-display);font-style:italic;font-weight:400;font-size:1.15rem;line-height:1.35;color:#fff}
+
+/* ============================================================
+   SOLUCION · cuerpo + palabra
+   ============================================================ */
+.solucion{background:linear-gradient(180deg,var(--ink) 0%,#141210 100%);position:relative;overflow:hidden}
+.solucion::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse 80% 60% at 50% 40%,rgba(154,204,43,.06),transparent 55%);pointer-events:none}
+.solucion .wrap{text-align:center}
+.solucion h2{margin-inline:auto;max-width:20ch}
+.solucion p.lead{margin-inline:auto;margin-top:20px;margin-bottom:80px;text-align:center}
+.pillars{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--line);border:1px solid var(--line);border-radius:6px;overflow:hidden}
+@media(max-width:900px){ .pillars{grid-template-columns:1fr} }
+.pillar{background:#0d0c0b;padding:56px 40px;text-align:left;transition:var(--tr);position:relative;overflow:hidden}
+.pillar::before{content:'';position:absolute;top:0;left:0;width:0%;height:1px;background:var(--lime);transition:width .8s var(--ease)}
+.pillar:hover::before{width:100%}
+.pillar:hover{background:#111}
+.pillar-num{font-family:var(--f-display);font-style:italic;font-weight:300;font-size:2.4rem;color:var(--lime);margin-bottom:20px;line-height:1}
+.pillar h3{font-size:1.5rem;margin-bottom:14px}
+.pillar p{font-size:.95rem;color:rgba(246,241,232,.68)}
+
+/* ============================================================
+   QUE INCLUYE
+   ============================================================ */
+.incluye{background:#0a0a0a;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.incluye .wrap{display:grid;grid-template-columns:1fr 1fr;gap:100px;align-items:center}
+@media(max-width:900px){ .incluye .wrap{grid-template-columns:1fr;gap:60px} }
+.inc-img{position:relative;aspect-ratio:3/4;border-radius:6px;overflow:hidden}
+.inc-img img{width:100%;height:100%;object-fit:cover;transition:transform 8s ease-out}
+.inc-img:hover img{transform:scale(1.06)}
+.inc-list{list-style:none;margin-top:36px;display:flex;flex-direction:column;gap:20px}
+.inc-item{display:flex;gap:22px;padding:24px 26px;background:rgba(246,241,232,.03);border:1px solid var(--line);border-radius:4px;transition:var(--tr)}
+.inc-item:hover{background:rgba(246,241,232,.05);border-color:rgba(154,204,43,.3)}
+.inc-icon{flex-shrink:0;width:48px;height:48px;border-radius:50%;background:rgba(154,204,43,.10);border:1px solid rgba(154,204,43,.35);display:grid;place-items:center;color:var(--lime)}
+.inc-icon svg{width:22px;height:22px;stroke:currentColor;fill:none;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}
+.inc-text h4{color:var(--lime);margin-bottom:6px;font-size:.72rem}
+.inc-text strong{display:block;font-family:var(--f-alt);font-weight:500;font-size:1.05rem;color:#fff;margin-bottom:6px}
+.inc-text p{font-size:.92rem;color:rgba(246,241,232,.66);line-height:1.55}
+
+/* ============================================================
+   TRIO · Jimmy + Kira + Pilar
+   ============================================================ */
+.trio{background:#0d0c0b;border-top:1px solid var(--line)}
+.trio-head{text-align:center;margin-bottom:80px}
+.trio-head h2{margin-inline:auto}
+.trio-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:32px}
+@media(max-width:900px){ .trio-grid{grid-template-columns:1fr;gap:40px} }
+.persona{position:relative}
+.persona-img{aspect-ratio:4/5;border-radius:6px;overflow:hidden;position:relative;margin-bottom:24px}
+.persona-img img{width:100%;height:100%;object-fit:cover;transition:transform 6s ease-out,filter .8s ease}
+.persona:hover .persona-img img{transform:scale(1.05);filter:brightness(1.05)}
+.persona-img::after{content:'';position:absolute;inset:0;background:linear-gradient(180deg,transparent 40%,rgba(10,10,10,.45) 100%);pointer-events:none}
+.persona-role{font-family:var(--f-alt);font-weight:500;font-size:.66rem;letter-spacing:.36em;text-transform:uppercase;color:var(--lime);margin-bottom:10px}
+.persona-name{font-family:var(--f-display);font-weight:400;font-size:1.9rem;line-height:1.05;letter-spacing:-.015em;color:#fff;margin-bottom:12px}
+.persona-name em{font-style:italic;font-weight:300;color:var(--peach)}
+.persona-bio{font-family:var(--f-sans);font-weight:300;font-size:.94rem;line-height:1.55;color:rgba(246,241,232,.7)}
+
+/* ============================================================
+   PRUEBA SOCIAL · numeros
+   ============================================================ */
+.social{background:var(--ink);border-top:1px solid var(--line);padding:80px 0}
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--line)}
+@media(max-width:900px){ .stats{grid-template-columns:repeat(2,1fr)} }
+.stat{background:var(--ink);padding:48px 32px;text-align:center}
+.stat-num{font-family:var(--f-display);font-weight:400;font-size:clamp(2.4rem,4.5vw,3.6rem);line-height:1;color:var(--lime);margin-bottom:12px;letter-spacing:-.02em}
+.stat-num sup{font-size:.5em;top:-.4em;position:relative;color:var(--lime)}
+.stat-lbl{font-family:var(--f-alt);font-weight:400;font-size:.74rem;letter-spacing:.28em;text-transform:uppercase;color:rgba(246,241,232,.55)}
+
+/* Marquee de frases */
+.marquee{overflow:hidden;padding:28px 0;border-top:1px solid var(--line);background:#0a0a0a}
+.marquee-track{display:flex;gap:60px;white-space:nowrap;animation:marquee 60s linear infinite;will-change:transform}
+.marquee-track span{font-family:var(--f-display);font-style:italic;font-weight:300;font-size:clamp(1.4rem,3vw,2.2rem);color:rgba(246,241,232,.32);display:inline-flex;align-items:center;gap:60px}
+.marquee-track span::after{content:'✦';color:var(--lime);font-style:normal;margin-left:60px;font-size:.7em}
+@keyframes marquee{to{transform:translateX(-50%)}}
+
+/* ============================================================
+   FORMULARIO · opt-in
+   ============================================================ */
+.optin{background:linear-gradient(180deg,#0a0a0a 0%,#141210 60%,#1a1614 100%);position:relative;overflow:hidden;padding:140px 0}
+.optin::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse 60% 50% at 50% 40%,rgba(154,204,43,.10),transparent 60%),radial-gradient(ellipse 40% 30% at 20% 80%,rgba(201,106,58,.10),transparent 60%);pointer-events:none}
+.optin-inner{position:relative;z-index:2;max-width:640px;margin:0 auto;padding:0 32px;text-align:center}
+.optin h2{margin-inline:auto;font-size:clamp(2.4rem,5.5vw,4.4rem)}
+.optin p.lead{margin:24px auto 44px;text-align:center}
+.optin form{background:rgba(10,10,10,.55);backdrop-filter:blur(30px);border:1px solid rgba(246,241,232,.10);border-radius:8px;padding:40px 36px;display:flex;flex-direction:column;gap:16px;text-align:left}
+@media(max-width:640px){ .optin{padding:100px 0} .optin form{padding:28px 22px} }
+.optin form label{font-family:var(--f-alt);font-weight:500;font-size:.68rem;letter-spacing:.28em;text-transform:uppercase;color:rgba(246,241,232,.62);margin-bottom:-6px;margin-top:4px}
+.optin form input{width:100%;background:transparent;border:0;border-bottom:1px solid rgba(246,241,232,.18);padding:12px 2px;font-family:var(--f-sans);font-size:1.02rem;color:#fff;transition:border-color .3s ease;font-weight:400}
+.optin form input:focus{outline:0;border-bottom-color:var(--lime)}
+.optin form input::placeholder{color:rgba(246,241,232,.32);font-weight:300}
+.optin form .row{display:grid;grid-template-columns:80px 1fr;gap:14px;align-items:end}
+.optin form .row input:first-child{text-align:center;letter-spacing:.05em}
+.optin form button{margin-top:22px;background:var(--lime);color:var(--ink);padding:20px;border-radius:100px;font-family:var(--f-alt);font-weight:700;font-size:.86rem;letter-spacing:.22em;text-transform:uppercase;cursor:pointer;transition:var(--tr);display:flex;align-items:center;justify-content:center;gap:12px}
+.optin form button:hover:not(:disabled){background:#fff;transform:translateY(-2px);box-shadow:0 20px 50px rgba(154,204,43,.35)}
+.optin form button:disabled{opacity:.6;cursor:wait}
+.optin form button svg{width:16px;height:16px;fill:none;stroke:currentColor;stroke-width:2}
+.optin-fine{margin-top:20px;font-family:var(--f-sans);font-weight:300;font-size:.78rem;color:rgba(246,241,232,.44);line-height:1.5}
+.form-err{color:#ff8c7a;font-size:.82rem;margin-top:4px;min-height:1.2em}
+.form-ok{display:none;background:rgba(154,204,43,.10);border:1px solid var(--lime);border-radius:6px;padding:20px;color:var(--lime);text-align:center;font-family:var(--f-alt);font-weight:600;letter-spacing:.12em}
+.form-ok.show{display:block;animation:fadeIn .6s var(--ease)}
+@keyframes fadeIn{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}
+
+/* ============================================================
+   FOOTER
+   ============================================================ */
+.foot{background:#050505;padding:60px 0 40px;border-top:1px solid var(--line);text-align:center}
+.foot img{height:32px;margin:0 auto 20px;filter:brightness(0) invert(1);opacity:.6}
+.foot p{font-family:var(--f-alt);font-size:.68rem;letter-spacing:.26em;text-transform:uppercase;color:rgba(246,241,232,.35);line-height:1.9}
+.foot p a{color:var(--lime)}
+.foot p a:hover{color:#fff}
+
+/* ============================================================
+   Text-selection color
+   ============================================================ */
+::selection{background:var(--lime);color:var(--ink)}
+::-moz-selection{background:var(--lime);color:var(--ink)}
+</style>
+</head>
+<body>
+
+<!-- PRELOADER -->
+<div class="pre" id="pre">
+  <div class="pre-stack">
+    <div class="pre-mark">Flowback · Pilar Sordo</div>
+    <div class="pre-title">Cuerpo <span class="n">×</span> <em>Palabra</em></div>
+    <div class="pre-bar"><span id="preFill"></span></div>
+    <div class="pre-meta">Cargando<span class="pct" id="prePct">0%</span></div>
+  </div>
+</div>
+
+<!-- GRAIN texture -->
+<div class="grain"></div>
+
+<!-- NAV -->
+<nav class="nav" id="nav">
+  <a href="/" aria-label="Flowback">
+    <img src="assets/logos/flowback-logo.png" alt="Flowback Fitness" class="nav-logo">
+  </a>
+  <a href="#optin" class="nav-cta">Quiero mi cupo</a>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-bg">
+    <img src="assets/img/women-flow.jpg" alt="Grupo de mujeres practicando movimiento consciente en un estudio cálido">
+  </div>
+  <div class="hero-inner">
+    <div class="hero-tag rv">Programa 3 meses · Cupos limitados</div>
+    <h1 class="rv rv-d1">Cuerpo <span class="amp">×</span> <em>Palabra</em>.<br>Un encuentro entre <em>lo que sientes</em> y <em>cómo te lo dices</em>.</h1>
+    <p class="hero-sub rv rv-d2">Flowback y Pilar Sordo se unen por primera vez en un programa de tres meses para mujeres que quieren volver a habitar su cuerpo, soltar lo acumulado y sanar el diálogo interno. Movimiento consciente, palabra que abraza, comunidad que sostiene.</p>
+    <div class="hero-cta-row rv rv-d3">
+      <a href="#optin" class="btn btn-primary">Quiero mi cupo
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+      </a>
+      <a href="#video" class="btn btn-ghost">
+        <svg viewBox="0 0 24 24" fill="currentColor"><polygon points="6 4 20 12 6 20"/></svg>
+        Ver video
+      </a>
+    </div>
+  </div>
+  <div class="hero-scroll">
+    <span>Scroll</span>
+    <div class="line"></div>
+  </div>
+</section>
+
+<!-- VSL -->
+<section class="sec vsl" id="video">
+  <div class="wrap-tight">
+    <div class="rv">
+      <div class="kicker">Bienvenida</div>
+      <h2>Un mensaje de <em>Jimmy y Pilar</em>.</h2>
+      <p class="lead" style="margin-bottom:60px">Cuéntanos por qué nace este encuentro y qué vas a vivir en estos 90 días. Menos de tres minutos, escucha con calma.</p>
+    </div>
+    <div class="vsl-frame rv rv-d1" onclick="alert('Video próximamente — placeholder para el VSL de Jimmy y Pilar.')">
+      <img src="assets/img/jimmy-2.jpg" alt="Jimmy Lavín · portada del video de bienvenida">
+      <div class="vsl-play">
+        <div class="vsl-play-inner">
+          <svg viewBox="0 0 24 24"><polygon points="6 4 20 12 6 20"/></svg>
+        </div>
+      </div>
+    </div>
+    <div class="vsl-caption">02:47 · Bienvenida grabada especialmente para ti</div>
+  </div>
+</section>
+
+<!-- PROBLEMA -->
+<section class="sec problema">
+  <div class="wrap">
+    <div class="problema-txt">
+      <div class="rv">
+        <div class="kicker">Si esto te suena</div>
+        <h2>Tu cuerpo lleva años <em>guardando lo que no dijiste</em>.</h2>
+        <p class="lead">Los años se acumulan distinto en las mujeres. No es solo la espalda, no es solo el cansancio. Es la voz que aparece cada mañana en el espejo y te dice cosas que no le dirías ni a tu peor enemiga.</p>
+      </div>
+      <ul class="pain-list rv rv-d1">
+        <li>Rigidez, dolores de espalda, cuello y caderas que llegaron para quedarse.</li>
+        <li>Cansancio que no se va durmiendo — un cansancio del alma más que del cuerpo.</li>
+        <li>Una relación con tu cuerpo que hace años dejó de ser cariñosa.</li>
+        <li>Ganas de moverte pero aburrida del gimnasio, del "no pain no gain", de forzarte.</li>
+        <li>Un diálogo interno que juzga, exige y nunca celebra.</li>
+      </ul>
+    </div>
+    <div class="problema-img rv rv-d2">
+      <img src="assets/img/flow-golden.jpg" alt="Mujer en pose de movimiento consciente al atardecer">
+      <div class="problema-quote">"Me muevo para habitarme,<br>me estiro para liberarme,<br>respiro para sentirme."</div>
+    </div>
+  </div>
+</section>
+
+<!-- SOLUCION -->
+<section class="sec solucion">
+  <div class="wrap">
+    <div class="rv">
+      <div class="kicker">La propuesta</div>
+      <h2>Un solo programa. Tres <em>pilares</em> que se sostienen.</h2>
+      <p class="lead">No es un curso más de fitness ni un taller más de autoayuda. Es un tejido entre dos escuelas — la del movimiento consciente y la de la palabra que sana — para que cuerpo, emoción y voz vuelvan a conversar.</p>
+    </div>
+    <div class="pillars rv rv-d1">
+      <article class="pillar">
+        <div class="pillar-num">01</div>
+        <h3>El <em>cuerpo</em> que se libera</h3>
+        <p>Movimiento neuro-somático, ancestral y adaptado. Recuperas movilidad, fuerza real y una consciencia corporal que no habías sentido en años. Sin gimnasio, sin impacto, sin comparar.</p>
+      </article>
+      <article class="pillar">
+        <div class="pillar-num">02</div>
+        <h3>La <em>palabra</em> que abraza</h3>
+        <p>Contenido de Pilar Sordo sobre cómo te hablas, cómo te quieres y cómo dejas de repetirte las historias que ya no te sirven. La voz interna deja de ser jueza y empieza a ser aliada.</p>
+      </article>
+      <article class="pillar">
+        <div class="pillar-num">03</div>
+        <h3>La <em>presencia</em> que sostiene</h3>
+        <p>Tres meses acompañada por Jimmy, Kira y una comunidad de mujeres que están viviendo lo mismo. Grupo de WhatsApp diario, respuestas a tu ritmo, cero soledad.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- QUE INCLUYE -->
+<section class="sec incluye">
+  <div class="wrap">
+    <div class="inc-img rv">
+      <img src="assets/img/grupo-1.jpg" alt="Comunidad Flowback en clase">
+    </div>
+    <div>
+      <div class="rv">
+        <div class="kicker">Qué incluye</div>
+        <h2>Todo lo que necesitas para estos <em>90 días</em>.</h2>
+        <p class="lead">Un programa integrado, no una biblioteca de contenidos sueltos. Cada elemento fue pensado para sostenerte durante los tres meses.</p>
+      </div>
+      <ul class="inc-list">
+        <li class="inc-item rv rv-d1">
+          <div class="inc-icon"><svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><line x1="7" y1="10" x2="17" y2="10"/><line x1="7" y1="14" x2="14" y2="14"/></svg></div>
+          <div class="inc-text">
+            <h4>Componente 1</h4>
+            <strong>Clases Flowback en vivo por Zoom</strong>
+            <p>Acceso completo a las clases de la comunidad Flowback, 7 días a la semana. Movilidad, flow, fuerza funcional y meditación. Grabadas si no puedes conectarte.</p>
+          </div>
+        </li>
+        <li class="inc-item rv rv-d2">
+          <div class="inc-icon"><svg viewBox="0 0 24 24"><path d="M12 3v18M3 12h18"/></svg></div>
+          <div class="inc-text">
+            <h4>Componente 2</h4>
+            <strong>Programa exclusivo con Pilar Sordo</strong>
+            <p>Contenido grabado + encuentros en vivo especialmente creados para este lanzamiento. Cómo te hablas, cuánto te quieres, cómo se rehabita el cuerpo desde la palabra.</p>
+          </div>
+        </li>
+        <li class="inc-item rv rv-d3">
+          <div class="inc-icon"><svg viewBox="0 0 24 24"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg></div>
+          <div class="inc-text">
+            <h4>Componente 3</h4>
+            <strong>Comunidad WhatsApp + agente IA 24/7</strong>
+            <p>Grupo privado con las mujeres del programa. Respuestas a tu ritmo, contenido diario y un asistente de IA que te acompaña con nutrición, movimiento y emocionalidad todo el día.</p>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- TRIO -->
+<section class="sec trio">
+  <div class="wrap">
+    <div class="trio-head rv">
+      <div class="kicker">Quiénes te acompañan</div>
+      <h2>Tres voces. <em>Un mismo cuidado</em>.</h2>
+    </div>
+    <div class="trio-grid">
+      <article class="persona rv rv-d1">
+        <div class="persona-img"><img src="assets/img/jimmy-1.jpg" alt="Jimmy Lavín — fundador Flowback"></div>
+        <div class="persona-role">Fundador · Flowback</div>
+        <div class="persona-name">Jimmy <em>Lavín</em></div>
+        <p class="persona-bio">Entrenador y coach, formado en Neurociencia del Trauma. Referente en TV y radio en salud y bienestar. Más de un millón de personas siguen su forma de mover el cuerpo.</p>
+      </article>
+      <article class="persona rv rv-d2">
+        <div class="persona-img"><img src="assets/img/kira-1.jpg" alt="Kira Huberman — cofundadora Flowback"></div>
+        <div class="persona-role">Cofundadora · Terapeuta corporal</div>
+        <div class="persona-name">Kira <em>Huberman</em></div>
+        <p class="persona-bio">Terapeuta corporal formada en Neurociencia en la Escuela de Epicurio. Ha formado a más de 600 profesores certificados en Flowback. Ciencia, somática y mística.</p>
+      </article>
+      <article class="persona rv rv-d3">
+        <div class="persona-img"><img src="assets/img/pilar-portrait.jpg" alt="Pilar Sordo — psicóloga y escritora"></div>
+        <div class="persona-role">Invitada especial · Psicóloga</div>
+        <div class="persona-name">Pilar <em>Sordo</em></div>
+        <p class="persona-bio">Psicóloga chilena. Autora de más de una decena de libros sobre relaciones humanas, cómo nos hablamos y cómo nos cuidamos. Charlista y referente en todo Latinoamérica.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- PRUEBA SOCIAL -->
+<section class="social">
+  <div class="wrap">
+    <div class="stats rv">
+      <div class="stat"><div class="stat-num">+2.300</div><div class="stat-lbl">Alumnas activas</div></div>
+      <div class="stat"><div class="stat-num">+600</div><div class="stat-lbl">Profes certificados</div></div>
+      <div class="stat"><div class="stat-num">1<sup>M</sup>+</div><div class="stat-lbl">Comunidad RRSS</div></div>
+      <div class="stat"><div class="stat-num">−66<sup>%</sup></div><div class="stat-lbl">Estrés reducido</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- MARQUEE -->
+<div class="marquee">
+  <div class="marquee-track">
+    <span>Fluye, hazte liviano y conecta tus sentidos.</span>
+    <span>Fluye, hazte liviano y conecta tus sentidos.</span>
+    <span>Fluye, hazte liviano y conecta tus sentidos.</span>
+    <span>Fluye, hazte liviano y conecta tus sentidos.</span>
+  </div>
+</div>
+
+<!-- OPT-IN FORM -->
+<section class="sec optin" id="optin">
+  <div class="optin-inner">
+    <div class="rv">
+      <div class="kicker">Reserva tu cupo</div>
+      <h2>El programa arranca <em>muy pronto</em>.</h2>
+      <p class="lead">Las mujeres que dejen sus datos entran primero al grupo de WhatsApp con contenido diario, prioridad en el cupo y una tarifa preferente antes del lanzamiento oficial.</p>
+    </div>
+    <div id="formOk" class="form-ok">
+      Listo. Te acabamos de agregar. Revisa tu WhatsApp en los próximos minutos y guarda nuestro número: <strong>+56 9 7590 5158</strong>.
+    </div>
+    <form id="optinForm" class="rv rv-d1" novalidate>
+      <div>
+        <label for="nombre">Tu nombre</label>
+        <input type="text" id="nombre" name="nombre" placeholder="María" required autocomplete="given-name">
+      </div>
+      <div>
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="tu@correo.cl" required autocomplete="email">
+      </div>
+      <div>
+        <label for="whatsapp">WhatsApp</label>
+        <div class="row">
+          <input type="text" id="cc" value="+56" readonly>
+          <input type="tel" id="whatsapp" name="whatsapp" placeholder="9 1234 5678" required autocomplete="tel-national" pattern="[\d\s\-]{7,15}">
+        </div>
+      </div>
+      <div class="form-err" id="formErr"></div>
+      <button type="submit" id="submitBtn">
+        <span>Entrar al grupo de WhatsApp</span>
+        <svg viewBox="0 0 24 24"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+      </button>
+      <p class="optin-fine">Al enviar aceptas recibir contenido de Flowback × Pilar Sordo. Nada de spam. Puedes salirte cuando quieras.</p>
+    </form>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="foot">
+  <img src="assets/logos/flowback-logo.png" alt="Flowback Fitness">
+  <p>© 2026 Flowback Fitness · Todos los derechos reservados<br>
+  Un lanzamiento junto a <a href="#">Pilar Sordo</a> · Desarrollado por <a href="https://digitals.cl" target="_blank" rel="noopener">Digitals</a></p>
+</footer>
+
+<script>
+/* ============================================================
+   PRELOADER · 0→100
+   ============================================================ */
+(function(){
+  var pct=document.getElementById('prePct'),fill=document.getElementById('preFill'),pre=document.getElementById('pre');
+  if(!pct||!pre) return;
+  function run(){
+    var t0=performance.now(),DUR=1600;
+    function tick(now){
+      var p=Math.min(1,(now-t0)/DUR),e=1-Math.pow(1-p,2.4),v=Math.round(e*100);
+      pct.textContent=v+'%'; fill.style.width=v+'%';
+      if(p<1) requestAnimationFrame(tick);
+      else setTimeout(function(){ pre.classList.add('is-out'); },200);
+    }
+    requestAnimationFrame(tick);
+  }
+  if(document.readyState==='complete') run();
+  else window.addEventListener('load', run);
+})();
+
+/* ============================================================
+   NAV scroll state
+   ============================================================ */
+(function(){
+  var nav=document.getElementById('nav');
+  function onScroll(){ if(window.scrollY>40) nav.classList.add('sc'); else nav.classList.remove('sc'); }
+  window.addEventListener('scroll', onScroll, {passive:true});
+  onScroll();
+})();
+
+/* ============================================================
+   REVEAL animations via IntersectionObserver
+   ============================================================ */
+(function(){
+  var io=new IntersectionObserver(function(entries){
+    entries.forEach(function(e){
+      if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target); }
+    });
+  }, {threshold:0.14, rootMargin:'0px 0px -60px 0px'});
+  document.querySelectorAll('.rv').forEach(function(el){ io.observe(el); });
+})();
+
+/* ============================================================
+   FORM · client-side validation + submit (endpoint TBC)
+   ============================================================ */
+(function(){
+  var form=document.getElementById('optinForm'),
+      err=document.getElementById('formErr'),
+      ok=document.getElementById('formOk'),
+      btn=document.getElementById('submitBtn');
+  if(!form) return;
+
+  form.addEventListener('submit', function(ev){
+    ev.preventDefault();
+    err.textContent='';
+    var nombre=form.nombre.value.trim(),
+        email=form.email.value.trim(),
+        wa=form.whatsapp.value.trim().replace(/[\s\-]/g,'');
+    if(nombre.length<2){ err.textContent='Cuéntanos tu nombre — necesitamos algo para llamarte.'; return; }
+    if(!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)){ err.textContent='Revisa tu email — parece que falta algo.'; return; }
+    if(!/^\d{8,10}$/.test(wa)){ err.textContent='Ingresa tu WhatsApp con código de área (ej: 9 1234 5678).'; return; }
+
+    btn.disabled=true;
+    var attrib={};
+    try{ attrib=JSON.parse(sessionStorage.getItem('fbps_attrib')||'{}'); }catch(e){}
+
+    var payload={
+      nombre:nombre, email:email, whatsapp:'+56'+wa,
+      programa:'flowback-pilarsordo-2026',
+      landing_url:location.href, referrer:document.referrer||'',
+      ts:new Date().toISOString(), ...attrib
+    };
+    try{ sessionStorage.setItem('fbps_lead', JSON.stringify(payload)); }catch(e){}
+
+    /* Endpoint Hapee real cuando esté configurado. Por ahora simula y redirige. */
+    setTimeout(function(){
+      /* Aquí iría: fetch('https://services.leadconnectorhq.com/hooks/...', {method:'POST', body:JSON.stringify(payload), ...}); */
+      location.href='/gracias';
+    }, 700);
+  });
+})();
+
+/* ============================================================
+   Play button placeholder
+   ============================================================ */
+</script>
+
+</body>
+</html>
