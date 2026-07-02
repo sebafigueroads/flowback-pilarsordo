@@ -3,15 +3,15 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-<title>Flowback × Pilar Sordo — Cuerpo, palabra y presencia. Un programa de 3 meses.</title>
-<meta name="description" content="Un encuentro entre el movimiento consciente de Flowback y el diálogo interno de Pilar Sordo. 3 meses para habitar tu cuerpo y sanar cómo te hablas. Cupos limitados.">
+<title>Membresía Flowback Tribu — Rejuvenece y fortalece tu cuerpo desde tu casa.</title>
+<meta name="description" content="La membresía Flowback Tribu: clases en vivo 7 días a la semana desde tu casa, guías de alimentación desinflamatoria y acompañamiento 24/7. Rejuvenece y fortalece tu cuerpo a cualquier edad.">
 <meta name="robots" content="index, follow, max-image-preview:large">
 <meta name="theme-color" content="#0d0d0d">
 <link rel="canonical" href="https://flowback-pilarsordo.digitalsagencia.cl/">
 <meta property="og:type" content="website">
 <meta property="og:locale" content="es_CL">
-<meta property="og:title" content="Flowback × Pilar Sordo — Un programa de cuerpo y palabra">
-<meta property="og:description" content="3 meses para habitar tu cuerpo y sanar cómo te hablas. Movimiento consciente + diálogo interno. Cupos limitados.">
+<meta property="og:title" content="Membresía Flowback Tribu — Rejuvenece tu cuerpo desde casa">
+<meta property="og:description" content="Clases en vivo 7 días a la semana, alimentación desinflamatoria y una tribu que te sostiene. Desde $35.000 CLP al mes.">
 <meta property="og:image" content="https://flowback-pilarsordo.digitalsagencia.cl/assets/img/women-flow.jpg">
 <link rel="icon" type="image/png" href="assets/logos/flowback-logo.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -260,6 +260,31 @@ p{font-family:var(--f-sans);font-weight:300;line-height:1.65;color:rgba(246,241,
 .marquee-track span::after{content:'✦';color:var(--lime);font-style:normal;margin-left:60px;font-size:.7em}
 @keyframes marquee{to{transform:translateX(-50%)}}
 
+
+/* ============================================================
+   PLANES · membresía
+   ============================================================ */
+.planes{background:linear-gradient(180deg,#0d0c0b 0%,var(--ink) 100%);border-top:1px solid var(--line)}
+.planes .wrap{text-align:center}
+.planes h2{margin-inline:auto}
+.planes p.lead{margin-inline:auto;margin-bottom:70px;text-align:center}
+.plan-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;max-width:1080px;margin-inline:auto;text-align:left}
+@media(max-width:900px){ .plan-grid{grid-template-columns:1fr;max-width:460px} }
+.plan{position:relative;background:rgba(246,241,232,.03);border:1px solid var(--line);border-radius:8px;padding:44px 36px;display:flex;flex-direction:column;transition:var(--tr)}
+.plan:hover{transform:translateY(-6px);border-color:rgba(154,204,43,.4);background:rgba(246,241,232,.05)}
+.plan.feat{background:rgba(154,204,43,.07);border-color:rgba(154,204,43,.55);box-shadow:0 30px 80px rgba(154,204,43,.12)}
+.plan-badge{position:absolute;top:-13px;left:36px;background:var(--lime);color:var(--ink);font-family:var(--f-alt);font-weight:700;font-size:.62rem;letter-spacing:.22em;text-transform:uppercase;padding:6px 14px;border-radius:100px}
+.plan-name{font-family:var(--f-alt);font-weight:600;font-size:.72rem;letter-spacing:.32em;text-transform:uppercase;color:rgba(246,241,232,.6);margin-bottom:18px}
+.plan-price{font-family:var(--f-display);font-weight:400;font-size:clamp(2.2rem,3.4vw,2.9rem);line-height:1;color:#fff;letter-spacing:-.02em}
+.plan-price small{font-size:.4em;color:rgba(246,241,232,.5);letter-spacing:0}
+.plan-usd{font-family:var(--f-sans);font-weight:300;font-size:.86rem;color:rgba(246,241,232,.55);margin-top:10px}
+.plan-save{display:inline-block;margin-top:14px;font-family:var(--f-alt);font-weight:700;font-size:.7rem;letter-spacing:.16em;text-transform:uppercase;color:var(--lime)}
+.plan-cta{margin-top:auto;padding-top:30px}
+.plan-cta a{display:flex;justify-content:center;align-items:center;gap:10px;padding:16px;border-radius:100px;font-family:var(--f-alt);font-weight:700;font-size:.76rem;letter-spacing:.2em;text-transform:uppercase;border:1px solid rgba(246,241,232,.24);color:var(--paper);transition:var(--tr)}
+.plan-cta a:hover{background:var(--lime);border-color:var(--lime);color:var(--ink);transform:translateY(-2px)}
+.plan.feat .plan-cta a{background:var(--lime);border-color:var(--lime);color:var(--ink)}
+.plan.feat .plan-cta a:hover{background:#fff;border-color:#fff}
+.plan-note{margin-top:34px;font-family:var(--f-sans);font-weight:300;font-size:.84rem;color:rgba(246,241,232,.5)}
 /* ============================================================
    FORMULARIO · opt-in
    ============================================================ */
@@ -307,8 +332,8 @@ p{font-family:var(--f-sans);font-weight:300;line-height:1.65;color:rgba(246,241,
 <!-- PRELOADER -->
 <div class="pre" id="pre">
   <div class="pre-stack">
-    <div class="pre-mark">Flowback · Pilar Sordo</div>
-    <div class="pre-title">Cuerpo <span class="n">×</span> <em>Palabra</em></div>
+    <div class="pre-mark">Flowback Fitness</div>
+    <div class="pre-title">La <span class="n">Tribu</span> <em>Flowback</em></div>
     <div class="pre-bar"><span id="preFill"></span></div>
     <div class="pre-meta">Cargando<span class="pct" id="prePct">0%</span></div>
   </div>
@@ -322,7 +347,7 @@ p{font-family:var(--f-sans);font-weight:300;line-height:1.65;color:rgba(246,241,
   <a href="/" aria-label="Flowback">
     <img src="assets/logos/flowback-logo.png" alt="Flowback Fitness" class="nav-logo">
   </a>
-  <a href="#optin" class="nav-cta">Quiero mi cupo</a>
+  <a href="#planes" class="nav-cta">Ver planes</a>
 </nav>
 
 <!-- HERO -->
@@ -331,11 +356,11 @@ p{font-family:var(--f-sans);font-weight:300;line-height:1.65;color:rgba(246,241,
     <img src="assets/img/women-flow.jpg" alt="Grupo de mujeres practicando movimiento consciente en un estudio cálido">
   </div>
   <div class="hero-inner">
-    <div class="hero-tag rv">Programa 3 meses · Cupos limitados</div>
-    <h1 class="rv rv-d1">Cuerpo <span class="amp">×</span> <em>Palabra</em>.<br>Un encuentro entre <em>lo que sientes</em> y <em>cómo te lo dices</em>.</h1>
-    <p class="hero-sub rv rv-d2">Flowback y Pilar Sordo se unen por primera vez en un programa de tres meses para mujeres que quieren volver a habitar su cuerpo, soltar lo acumulado y sanar el diálogo interno. Movimiento consciente, palabra que abraza, comunidad que sostiene.</p>
+    <div class="hero-tag rv">Membresía Tribu · Clases en vivo 7 días a la semana</div>
+    <h1 class="rv rv-d1">Rejuvenece y fortalece tu cuerpo <em>a cualquier edad</em>, desde tu casa.</h1>
+    <p class="hero-sub rv rv-d2">La membresía Flowback Tribu: movimiento neuro-somático en vivo los 7 días de la semana, alimentación desinflamatoria y una comunidad que te sostiene. Sin gimnasio, sin impacto, a tu ritmo — guiada por Jimmy y Kira.</p>
     <div class="hero-cta-row rv rv-d3">
-      <a href="#optin" class="btn btn-primary">Quiero mi cupo
+      <a href="#planes" class="btn btn-primary">Quiero unirme a la Tribu
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
       </a>
       <a href="#video" class="btn btn-ghost">
@@ -355,10 +380,10 @@ p{font-family:var(--f-sans);font-weight:300;line-height:1.65;color:rgba(246,241,
   <div class="wrap-tight">
     <div class="rv">
       <div class="kicker">Bienvenida</div>
-      <h2>Un mensaje de <em>Jimmy y Pilar</em>.</h2>
-      <p class="lead" style="margin-bottom:60px">Cuéntanos por qué nace este encuentro y qué vas a vivir en estos 90 días. Menos de tres minutos, escucha con calma.</p>
+      <h2>Un mensaje de <em>Jimmy y Kira</em>.</h2>
+      <p class="lead" style="margin-bottom:60px">Qué es la Tribu Flowback, cómo son las clases y por qué tu cuerpo puede volver a sentirse joven a cualquier edad. Menos de tres minutos, escucha con calma.</p>
     </div>
-    <div class="vsl-frame rv rv-d1" onclick="alert('Video próximamente — placeholder para el VSL de Jimmy y Pilar.')">
+    <div class="vsl-frame rv rv-d1" onclick="alert('Video próximamente — placeholder para el VSL de Jimmy y Kira.')">
       <img src="assets/img/jimmy-2.jpg" alt="Jimmy Lavín · portada del video de bienvenida">
       <div class="vsl-play">
         <div class="vsl-play-inner">
@@ -376,15 +401,15 @@ p{font-family:var(--f-sans);font-weight:300;line-height:1.65;color:rgba(246,241,
     <div class="problema-txt">
       <div class="rv">
         <div class="kicker">Si esto te suena</div>
-        <h2>Tu cuerpo lleva años <em>guardando lo que no dijiste</em>.</h2>
-        <p class="lead">Los años se acumulan distinto en las mujeres. No es solo la espalda, no es solo el cansancio. Es la voz que aparece cada mañana en el espejo y te dice cosas que no le dirías ni a tu peor enemiga.</p>
+        <h2>Esto <em>no es envejecimiento</em>. Es tu sistema nervioso en supervivencia.</h2>
+        <p class="lead">Si el cuerpo se siente rígido, con menos movilidad o más dolores que antes, no es "la edad". Es tensión acumulada que aún no ha podido liberarse — y se entrena para soltarla.</p>
       </div>
       <ul class="pain-list rv rv-d1">
-        <li>Rigidez, dolores de espalda, cuello y caderas que llegaron para quedarse.</li>
-        <li>Cansancio que no se va durmiendo — un cansancio del alma más que del cuerpo.</li>
-        <li>Una relación con tu cuerpo que hace años dejó de ser cariñosa.</li>
-        <li>Ganas de moverte pero aburrida del gimnasio, del "no pain no gain", de forzarte.</li>
-        <li>Un diálogo interno que juzga, exige y nunca celebra.</li>
+        <li>¿Sientes el cuerpo rígido, con menos movilidad o más dolores que antes?</li>
+        <li>¿Sientes que guardas emociones o tensiones que tu cuerpo aún no ha podido liberar?</li>
+        <li>Cansancio que no se va durmiendo, inflamación que no baja con dieta.</li>
+        <li>Ganas de moverte, pero lejos del gimnasio, del impacto y del "no pain no gain".</li>
+        <li>La sensación de que tu cuerpo envejeció más rápido que tú.</li>
       </ul>
     </div>
     <div class="problema-img rv rv-d2">
@@ -399,8 +424,8 @@ p{font-family:var(--f-sans);font-weight:300;line-height:1.65;color:rgba(246,241,
   <div class="wrap">
     <div class="rv">
       <div class="kicker">La propuesta</div>
-      <h2>Un solo programa. Tres <em>pilares</em> que se sostienen.</h2>
-      <p class="lead">No es un curso más de fitness ni un taller más de autoayuda. Es un tejido entre dos escuelas — la del movimiento consciente y la de la palabra que sana — para que cuerpo, emoción y voz vuelvan a conversar.</p>
+      <h2>Una sola membresía. Tres <em>pilares</em> que se sostienen.</h2>
+      <p class="lead">No es otro plan de ejercicios. Es un sistema que trabaja cuerpo, alimentación y acompañamiento al mismo tiempo, para que tu sistema nervioso salga de supervivencia y tu cuerpo vuelva a moverse joven.</p>
     </div>
     <div class="pillars rv rv-d1">
       <article class="pillar">
@@ -410,13 +435,13 @@ p{font-family:var(--f-sans);font-weight:300;line-height:1.65;color:rgba(246,241,
       </article>
       <article class="pillar">
         <div class="pillar-num">02</div>
-        <h3>La <em>palabra</em> que abraza</h3>
-        <p>Contenido de Pilar Sordo sobre cómo te hablas, cómo te quieres y cómo dejas de repetirte las historias que ya no te sirven. La voz interna deja de ser jueza y empieza a ser aliada.</p>
+        <h3>La <em>nutrición</em> que desinflama</h3>
+        <p>Guías de alimentación desinflamatoria y una guía nutricional personalizada. Comes para bajar la inflamación, recuperar energía y acompañar el trabajo del cuerpo — sin dietas extremas.</p>
       </article>
       <article class="pillar">
         <div class="pillar-num">03</div>
-        <h3>La <em>presencia</em> que sostiene</h3>
-        <p>Tres meses acompañada por Jimmy, Kira y una comunidad de mujeres que están viviendo lo mismo. Grupo de WhatsApp diario, respuestas a tu ritmo, cero soledad.</p>
+        <h3>La <em>tribu</em> que sostiene</h3>
+        <p>Una comunidad activa con Jimmy, Kira y cientos de personas moviéndose contigo, más acompañamiento emocional 24/7 por nuestro Agente de WhatsApp. Cero soledad, cero excusas.</p>
       </article>
     </div>
   </div>
@@ -431,32 +456,32 @@ p{font-family:var(--f-sans);font-weight:300;line-height:1.65;color:rgba(246,241,
     <div>
       <div class="rv">
         <div class="kicker">Qué incluye</div>
-        <h2>Todo lo que necesitas para estos <em>90 días</em>.</h2>
-        <p class="lead">Un programa integrado, no una biblioteca de contenidos sueltos. Cada elemento fue pensado para sostenerte durante los tres meses.</p>
+        <h2>Todo lo que obtienes <em>con tu membresía</em>.</h2>
+        <p class="lead">Una membresía integrada, no una biblioteca de videos sueltos. Cada elemento está pensado para que entrenes, comas y te sientas acompañada todos los días.</p>
       </div>
       <ul class="inc-list">
         <li class="inc-item rv rv-d1">
           <div class="inc-icon"><svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><line x1="7" y1="10" x2="17" y2="10"/><line x1="7" y1="14" x2="14" y2="14"/></svg></div>
           <div class="inc-text">
-            <h4>Componente 1</h4>
-            <strong>Clases Flowback en vivo por Zoom</strong>
-            <p>Acceso completo a las clases de la comunidad Flowback, 7 días a la semana. Movilidad, flow, fuerza funcional y meditación. Grabadas si no puedes conectarte.</p>
+            <h4>Incluye 01</h4>
+            <strong>Clases en vivo · 7 días a la semana</strong>
+            <p>Movilidad, flow, fuerza funcional y meditación en vivo, con horarios de Chile (America/Santiago). Todas las clases quedan grabadas si no puedes en ese horario.</p>
           </div>
         </li>
         <li class="inc-item rv rv-d2">
           <div class="inc-icon"><svg viewBox="0 0 24 24"><path d="M12 3v18M3 12h18"/></svg></div>
           <div class="inc-text">
-            <h4>Componente 2</h4>
-            <strong>Programa exclusivo con Pilar Sordo</strong>
-            <p>Contenido grabado + encuentros en vivo especialmente creados para este lanzamiento. Cómo te hablas, cuánto te quieres, cómo se rehabita el cuerpo desde la palabra.</p>
+            <h4>Incluye 02</h4>
+            <strong>Guías de alimentación desinflamatoria</strong>
+            <p>Guías prácticas para comer desinflamado + una guía nutricional personalizada según tu cuerpo y tu momento. Comida real, sin dietas imposibles.</p>
           </div>
         </li>
         <li class="inc-item rv rv-d3">
           <div class="inc-icon"><svg viewBox="0 0 24 24"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg></div>
           <div class="inc-text">
-            <h4>Componente 3</h4>
-            <strong>Comunidad WhatsApp + agente IA 24/7</strong>
-            <p>Grupo privado con las mujeres del programa. Respuestas a tu ritmo, contenido diario y un asistente de IA que te acompaña con nutrición, movimiento y emocionalidad todo el día.</p>
+            <h4>Incluye 03</h4>
+            <strong>Acompañamiento 24/7 por Agente de WhatsApp</strong>
+            <p>Acompañamiento nutricional y emocional todos los días por nuestro Agente de WhatsApp, más la comunidad privada de la Tribu. Respuestas a tu ritmo, todo el día.</p>
           </div>
         </li>
       </ul>
@@ -469,9 +494,9 @@ p{font-family:var(--f-sans);font-weight:300;line-height:1.65;color:rgba(246,241,
   <div class="wrap">
     <div class="trio-head rv">
       <div class="kicker">Quiénes te acompañan</div>
-      <h2>Tres voces. <em>Un mismo cuidado</em>.</h2>
+      <h2>Dos voces. <em>Un mismo cuidado</em>.</h2>
     </div>
-    <div class="trio-grid">
+    <div class="trio-grid" style="grid-template-columns:repeat(2,1fr);max-width:920px;margin-inline:auto">
       <article class="persona rv rv-d1">
         <div class="persona-img"><img src="assets/img/jimmy-1.jpg" alt="Jimmy Lavín — fundador Flowback"></div>
         <div class="persona-role">Fundador · Flowback</div>
@@ -483,12 +508,6 @@ p{font-family:var(--f-sans);font-weight:300;line-height:1.65;color:rgba(246,241,
         <div class="persona-role">Cofundadora · Terapeuta corporal</div>
         <div class="persona-name">Kira <em>Huberman</em></div>
         <p class="persona-bio">Terapeuta corporal formada en Neurociencia en la Escuela de Epicurio. Ha formado a más de 600 profesores certificados en Flowback. Ciencia, somática y mística.</p>
-      </article>
-      <article class="persona rv rv-d3">
-        <div class="persona-img"><img src="assets/img/pilar-portrait.jpg" alt="Pilar Sordo — psicóloga y escritora"></div>
-        <div class="persona-role">Invitada especial · Psicóloga</div>
-        <div class="persona-name">Pilar <em>Sordo</em></div>
-        <p class="persona-bio">Psicóloga chilena. Autora de más de una decena de libros sobre relaciones humanas, cómo nos hablamos y cómo nos cuidamos. Charlista y referente en todo Latinoamérica.</p>
       </article>
     </div>
   </div>
@@ -516,13 +535,49 @@ p{font-family:var(--f-sans);font-weight:300;line-height:1.65;color:rgba(246,241,
   </div>
 </div>
 
+
+<!-- PLANES -->
+<section class="sec planes" id="planes">
+  <div class="wrap">
+    <div class="rv">
+      <div class="kicker">Elige tu membresía</div>
+      <h2>Sé parte de la Tribu, <em>a tu ritmo</em>.</h2>
+      <p class="lead">Todos los planes incluyen lo mismo: clases en vivo 7 días a la semana, guías de alimentación desinflamatoria y acompañamiento 24/7. Solo cambia cuánto ahorras.</p>
+    </div>
+    <div class="plan-grid rv rv-d1">
+      <article class="plan">
+        <div class="plan-name">Mensual · 1 mes</div>
+        <div class="plan-price">$35.000 <small>CLP</small></div>
+        <div class="plan-usd">Equivale a $35 USD · puedes pagar en tu moneda local</div>
+        <div class="plan-cta"><a href="#optin" data-plan="mensual">Empezar ahora</a></div>
+      </article>
+      <article class="plan feat">
+        <div class="plan-badge">La más elegida</div>
+        <div class="plan-name">Trimestral · 3 meses</div>
+        <div class="plan-price">$65.000 <small>CLP</small></div>
+        <div class="plan-usd">Equivale a $65 USD · puedes pagar en tu moneda local</div>
+        <span class="plan-save">Ahorras 38%</span>
+        <div class="plan-cta"><a href="#optin" data-plan="trimestral">Quiero este plan</a></div>
+      </article>
+      <article class="plan">
+        <div class="plan-name">Semestral · 6 meses</div>
+        <div class="plan-price">$120.000 <small>CLP</small></div>
+        <div class="plan-usd">Equivale a $120 USD · puedes pagar en tu moneda local</div>
+        <span class="plan-save">Ahorras 50%</span>
+        <div class="plan-cta"><a href="#optin" data-plan="semestral">Quiero este plan</a></div>
+      </article>
+    </div>
+    <p class="plan-note rv rv-d2">Sin permanencia forzada · todas las clases quedan grabadas · horarios de Chile (America/Santiago)</p>
+  </div>
+</section>
+
 <!-- OPT-IN FORM -->
 <section class="sec optin" id="optin">
   <div class="optin-inner">
     <div class="rv">
       <div class="kicker">Reserva tu cupo</div>
-      <h2>El programa arranca <em>muy pronto</em>.</h2>
-      <p class="lead">Las mujeres que dejen sus datos entran primero al grupo de WhatsApp con contenido diario, prioridad en el cupo y una tarifa preferente antes del lanzamiento oficial.</p>
+      <h2>Da el primer paso <em>hoy</em>.</h2>
+      <p class="lead">Déjanos tus datos y te escribimos por WhatsApp para activar tu membresía en el plan que elegiste, resolver tus dudas y darte la bienvenida a la Tribu.</p>
     </div>
     <div id="formOk" class="form-ok">
       Listo. Te acabamos de agregar. Revisa tu WhatsApp en los próximos minutos y guarda nuestro número: <strong>+56 9 7590 5158</strong>.
@@ -545,10 +600,10 @@ p{font-family:var(--f-sans);font-weight:300;line-height:1.65;color:rgba(246,241,
       </div>
       <div class="form-err" id="formErr"></div>
       <button type="submit" id="submitBtn">
-        <span>Entrar al grupo de WhatsApp</span>
+        <span>Unirme a la Tribu</span>
         <svg viewBox="0 0 24 24"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
       </button>
-      <p class="optin-fine">Al enviar aceptas recibir contenido de Flowback × Pilar Sordo. Nada de spam. Puedes salirte cuando quieras.</p>
+      <p class="optin-fine">Al enviar aceptas recibir contenido de Flowback Fitness. Nada de spam. Puedes salirte cuando quieras.</p>
     </form>
   </div>
 </section>
@@ -557,7 +612,7 @@ p{font-family:var(--f-sans);font-weight:300;line-height:1.65;color:rgba(246,241,
 <footer class="foot">
   <img src="assets/logos/flowback-logo.png" alt="Flowback Fitness">
   <p>© 2026 Flowback Fitness · Todos los derechos reservados<br>
-  Un lanzamiento junto a <a href="#">Pilar Sordo</a> · Desarrollado por <a href="https://digitals.cl" target="_blank" rel="noopener">Digitals</a></p>
+  Con amor y toda nuestra energía, Kira &amp; Jimmy · Desarrollado por <a href="https://digitals.cl" target="_blank" rel="noopener">Digitals</a></p>
 </footer>
 
 <script>
@@ -629,7 +684,8 @@ p{font-family:var(--f-sans);font-weight:300;line-height:1.65;color:rgba(246,241,
 
     var payload={
       nombre:nombre, email:email, whatsapp:'+56'+wa,
-      programa:'flowback-pilarsordo-2026',
+      programa:'flowback-tribu-2026',
+      plan:(sessionStorage.getItem('fbps_plan')||'no-indicado'),
       landing_url:location.href, referrer:document.referrer||'',
       ts:new Date().toISOString(), ...attrib
     };
@@ -643,9 +699,14 @@ p{font-family:var(--f-sans);font-weight:300;line-height:1.65;color:rgba(246,241,
   });
 })();
 
-/* ============================================================
-   Play button placeholder
-   ============================================================ */
+/* Plan seleccionado → sessionStorage */
+(function(){
+  document.querySelectorAll('[data-plan]').forEach(function(a){
+    a.addEventListener('click', function(){
+      try{ sessionStorage.setItem('fbps_plan', a.getAttribute('data-plan')); }catch(e){}
+    });
+  });
+})();
 </script>
 
 </body>
