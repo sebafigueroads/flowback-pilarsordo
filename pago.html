@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="es-CL">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>Elige tu plan · Membresía Flowback Tribu</title>
+<meta name="description" content="Paso 2 de 3 — Elige tu plan de la Membresía Flowback Tribu: mensual, trimestral o semestral. Puedes pagar en tu moneda local.">
+<meta name="robots" content="noindex, follow">
+<meta name="theme-color" content="#0d0d0d">
+<link rel="icon" type="image/png" href="assets/logos/flowback-logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;1,9..144,300;1,9..144,400&family=Manrope:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#0a0a0a; --paper:#f6f1e8; --lime:#9ACC2B; --peach:#F9C475;
+  --line:rgba(255,255,255,.08);
+  --f-display:'Fraunces', Georgia, serif;
+  --f-sans:'Manrope', -apple-system, sans-serif;
+  --ease:cubic-bezier(.2,.7,.15,1); --tr:.5s var(--ease);
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html,body{overflow-x:hidden;max-width:100vw}
+html{scroll-behavior:smooth;background:var(--ink)}
+body{background:linear-gradient(180deg,#0a0a0a 0%,#141210 100%);color:var(--paper);font-family:var(--f-sans);font-size:16px;line-height:1.6;-webkit-font-smoothing:antialiased;min-height:100vh}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+::selection{background:var(--lime);color:var(--ink)}
+
+.grain{position:fixed;inset:0;z-index:998;pointer-events:none;opacity:.14;mix-blend-mode:overlay;
+  background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='140' height='140' viewBox='0 0 140 140'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='.92' numOctaves='3' stitchTiles='stitch'/></filter><rect width='140' height='140' filter='url(%23n)' opacity='.55'/></svg>")}
+
+.top{padding:26px 32px;display:flex;align-items:center;justify-content:space-between}
+.top img{height:26px;filter:brightness(0) invert(1);opacity:.9}
+.steps{font-family:var(--f-sans);font-weight:500;font-size:.66rem;letter-spacing:.32em;text-transform:uppercase;color:rgba(246,241,232,.5)}
+.steps b{color:var(--lime)}
+
+.wrap{max-width:1080px;margin:0 auto;padding:40px 32px 100px;position:relative;z-index:2}
+.head{text-align:center;margin-bottom:64px}
+.kicker{display:inline-flex;align-items:center;gap:14px;font-weight:500;font-size:.68rem;letter-spacing:.42em;text-transform:uppercase;color:var(--lime);margin-bottom:20px}
+.kicker::before,.kicker::after{content:'';width:28px;height:1px;background:var(--lime)}
+h1{font-family:var(--f-display);font-weight:400;font-size:clamp(2.2rem,5vw,3.8rem);line-height:1.02;letter-spacing:-.02em;color:#fff;margin-bottom:18px}
+h1 em{font-style:italic;color:var(--peach);font-weight:300}
+.sub{font-weight:300;font-size:1.06rem;color:rgba(246,241,232,.72);max-width:52ch;margin:0 auto}
+
+.plan-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;text-align:left}
+@media(max-width:900px){ .plan-grid{grid-template-columns:1fr;max-width:460px;margin-inline:auto} }
+.plan{position:relative;background:rgba(246,241,232,.03);border:1px solid var(--line);border-radius:8px;padding:44px 36px;display:flex;flex-direction:column;transition:var(--tr);opacity:0;transform:translateY(24px);animation:up .8s var(--ease) forwards}
+.plan:nth-child(2){animation-delay:.1s}
+.plan:nth-child(3){animation-delay:.2s}
+@keyframes up{to{opacity:1;transform:none}}
+.plan:hover{transform:translateY(-6px);border-color:rgba(154,204,43,.4);background:rgba(246,241,232,.05)}
+.plan.feat{background:rgba(154,204,43,.07);border-color:rgba(154,204,43,.55);box-shadow:0 30px 80px rgba(154,204,43,.12)}
+.plan-badge{position:absolute;top:-13px;left:36px;background:var(--lime);color:var(--ink);font-weight:700;font-size:.62rem;letter-spacing:.22em;text-transform:uppercase;padding:6px 14px;border-radius:100px}
+.plan-name{font-weight:600;font-size:.72rem;letter-spacing:.32em;text-transform:uppercase;color:rgba(246,241,232,.6);margin-bottom:18px}
+.plan-price{font-family:var(--f-display);font-weight:400;font-size:clamp(2.2rem,3.4vw,2.9rem);line-height:1;color:#fff;letter-spacing:-.02em}
+.plan-price small{font-size:.4em;color:rgba(246,241,232,.5)}
+.plan-usd{font-weight:300;font-size:.86rem;color:rgba(246,241,232,.55);margin-top:10px}
+.plan-save{display:inline-block;margin-top:14px;font-weight:700;font-size:.7rem;letter-spacing:.16em;text-transform:uppercase;color:var(--lime)}
+.plan ul{list-style:none;margin-top:22px;display:flex;flex-direction:column;gap:10px}
+.plan ul li{display:flex;gap:10px;font-weight:300;font-size:.88rem;color:rgba(246,241,232,.72);line-height:1.45}
+.plan ul li::before{content:'✓';color:var(--lime);font-weight:700;flex-shrink:0}
+.plan-cta{margin-top:auto;padding-top:30px}
+.plan-cta button{width:100%;display:flex;justify-content:center;align-items:center;gap:10px;padding:17px;border-radius:100px;font-family:var(--f-sans);font-weight:700;font-size:.78rem;letter-spacing:.2em;text-transform:uppercase;border:1px solid rgba(246,241,232,.24);background:transparent;color:var(--paper);cursor:pointer;transition:var(--tr)}
+.plan-cta button:hover{background:var(--lime);border-color:var(--lime);color:var(--ink);transform:translateY(-2px)}
+.plan.feat .plan-cta button{background:var(--lime);border-color:var(--lime);color:var(--ink)}
+.plan.feat .plan-cta button:hover{background:#fff;border-color:#fff}
+.plan-cta button:disabled{opacity:.6;cursor:wait}
+
+.trust{margin-top:56px;text-align:center}
+.trust-row{display:flex;flex-wrap:wrap;justify-content:center;gap:14px 36px;font-weight:400;font-size:.78rem;letter-spacing:.06em;color:rgba(246,241,232,.55)}
+.trust-row span{display:inline-flex;align-items:center;gap:8px}
+.trust-row svg{width:15px;height:15px;stroke:var(--lime);fill:none;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.back{display:block;text-align:center;margin-top:44px;font-weight:500;font-size:.72rem;letter-spacing:.24em;text-transform:uppercase;color:rgba(246,241,232,.45);transition:color .3s}
+.back:hover{color:var(--lime)}
+</style>
+</head>
+<body>
+<div class="grain"></div>
+
+<header class="top">
+  <a href="/"><img src="assets/logos/flowback-logo.png" alt="Flowback Fitness"></a>
+  <div class="steps">Paso <b>2</b> de 3 · Elige tu plan</div>
+</header>
+
+<main class="wrap">
+  <div class="head">
+    <div class="kicker">Membresía Tribu</div>
+    <h1>Elige tu plan y <em>activa tu membresía</em>.</h1>
+    <p class="sub">Todos los planes incluyen exactamente lo mismo — clases en vivo 7 días a la semana, guías de alimentación desinflamatoria y acompañamiento 24/7. Solo cambia cuánto ahorras.</p>
+  </div>
+
+  <div class="plan-grid">
+    <article class="plan">
+      <div class="plan-name">Mensual · 1 mes</div>
+      <div class="plan-price">$35.000 <small>CLP</small></div>
+      <div class="plan-usd">Equivale a $35 USD · paga en tu moneda local</div>
+      <ul>
+        <li>Clases en vivo 7 días a la semana</li>
+        <li>Todas las clases quedan grabadas</li>
+        <li>Guías de alimentación desinflamatoria</li>
+        <li>Acompañamiento 24/7 por Agente de WhatsApp</li>
+      </ul>
+      <div class="plan-cta"><button data-plan="mensual" data-precio="35000">Pagar $35.000</button></div>
+    </article>
+
+    <article class="plan feat">
+      <div class="plan-badge">La más elegida</div>
+      <div class="plan-name">Trimestral · 3 meses</div>
+      <div class="plan-price">$65.000 <small>CLP</small></div>
+      <div class="plan-usd">Equivale a $65 USD · paga en tu moneda local</div>
+      <span class="plan-save">Ahorras 38%</span>
+      <ul>
+        <li>Todo lo del plan mensual</li>
+        <li>3 meses de Tribu continua</li>
+        <li>Guía nutricional personalizada</li>
+        <li>Prioridad en encuentros en vivo</li>
+      </ul>
+      <div class="plan-cta"><button data-plan="trimestral" data-precio="65000">Pagar $65.000</button></div>
+    </article>
+
+    <article class="plan">
+      <div class="plan-name">Semestral · 6 meses</div>
+      <div class="plan-price">$120.000 <small>CLP</small></div>
+      <div class="plan-usd">Equivale a $120 USD · paga en tu moneda local</div>
+      <span class="plan-save">Ahorras 50%</span>
+      <ul>
+        <li>Todo lo del plan trimestral</li>
+        <li>6 meses de transformación completa</li>
+        <li>El mejor precio por mes</li>
+        <li>Compromiso que sí se cumple</li>
+      </ul>
+      <div class="plan-cta"><button data-plan="semestral" data-precio="120000">Pagar $120.000</button></div>
+    </article>
+  </div>
+
+  <div class="trust">
+    <div class="trust-row">
+      <span><svg viewBox="0 0 24 24"><rect x="3" y="11" width="18" height="10" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>Pago seguro</span>
+      <span><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg>Sin permanencia forzada</span>
+      <span><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>Acceso inmediato</span>
+      <span><svg viewBox="0 0 24 24"><path d="M17 2l4 4-4 4M3 11v-1a4 4 0 0 1 4-4h14M7 22l-4-4 4-4M21 13v1a4 4 0 0 1-4 4H3"/></svg>Cambia de plan cuando quieras</span>
+    </div>
+  </div>
+
+  <a class="back" href="/">← Volver a la página anterior</a>
+</main>
+
+<script>
+(function(){
+  document.querySelectorAll('[data-plan]').forEach(function(btn){
+    btn.addEventListener('click', function(){
+      btn.disabled=true;
+      var plan=btn.getAttribute('data-plan'), precio=btn.getAttribute('data-precio');
+      try{
+        sessionStorage.setItem('fbps_plan', plan);
+        var lead=JSON.parse(sessionStorage.getItem('fbps_lead')||'{}');
+        lead.plan=plan; lead.precio=precio; lead.paso='pago';
+        sessionStorage.setItem('fbps_lead', JSON.stringify(lead));
+      }catch(e){}
+      /* Aquí se conecta la pasarela real (Webpay / MercadoPago / links de pago Flowback).
+         Por ahora el funnel continúa directo a la confirmación. */
+      setTimeout(function(){ location.href='/gracias'; }, 500);
+    });
+  });
+})();
+</script>
+</body>
+</html>

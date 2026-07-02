@@ -347,7 +347,7 @@ p{font-family:var(--f-sans);font-weight:300;line-height:1.65;color:rgba(246,241,
   <a href="/" aria-label="Flowback">
     <img src="assets/logos/flowback-logo.png" alt="Flowback Fitness" class="nav-logo">
   </a>
-  <a href="#planes" class="nav-cta">Ver planes</a>
+  <a href="#optin" class="nav-cta">Quiero unirme</a>
 </nav>
 
 <!-- HERO -->
@@ -360,7 +360,7 @@ p{font-family:var(--f-sans);font-weight:300;line-height:1.65;color:rgba(246,241,
     <h1 class="rv rv-d1">Rejuvenece y fortalece tu cuerpo <em>a cualquier edad</em>, desde tu casa.</h1>
     <p class="hero-sub rv rv-d2">La membresía Flowback Tribu: movimiento neuro-somático en vivo los 7 días de la semana, alimentación desinflamatoria y una comunidad que te sostiene. Sin gimnasio, sin impacto, a tu ritmo — guiada por Jimmy y Kira.</p>
     <div class="hero-cta-row rv rv-d3">
-      <a href="#planes" class="btn btn-primary">Quiero unirme a la Tribu
+      <a href="#optin" class="btn btn-primary">Quiero unirme a la Tribu
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
       </a>
       <a href="#video" class="btn btn-ghost">
@@ -536,48 +536,13 @@ p{font-family:var(--f-sans);font-weight:300;line-height:1.65;color:rgba(246,241,
 </div>
 
 
-<!-- PLANES -->
-<section class="sec planes" id="planes">
-  <div class="wrap">
-    <div class="rv">
-      <div class="kicker">Elige tu membresía</div>
-      <h2>Sé parte de la Tribu, <em>a tu ritmo</em>.</h2>
-      <p class="lead">Todos los planes incluyen lo mismo: clases en vivo 7 días a la semana, guías de alimentación desinflamatoria y acompañamiento 24/7. Solo cambia cuánto ahorras.</p>
-    </div>
-    <div class="plan-grid rv rv-d1">
-      <article class="plan">
-        <div class="plan-name">Mensual · 1 mes</div>
-        <div class="plan-price">$35.000 <small>CLP</small></div>
-        <div class="plan-usd">Equivale a $35 USD · puedes pagar en tu moneda local</div>
-        <div class="plan-cta"><a href="#optin" data-plan="mensual">Empezar ahora</a></div>
-      </article>
-      <article class="plan feat">
-        <div class="plan-badge">La más elegida</div>
-        <div class="plan-name">Trimestral · 3 meses</div>
-        <div class="plan-price">$65.000 <small>CLP</small></div>
-        <div class="plan-usd">Equivale a $65 USD · puedes pagar en tu moneda local</div>
-        <span class="plan-save">Ahorras 38%</span>
-        <div class="plan-cta"><a href="#optin" data-plan="trimestral">Quiero este plan</a></div>
-      </article>
-      <article class="plan">
-        <div class="plan-name">Semestral · 6 meses</div>
-        <div class="plan-price">$120.000 <small>CLP</small></div>
-        <div class="plan-usd">Equivale a $120 USD · puedes pagar en tu moneda local</div>
-        <span class="plan-save">Ahorras 50%</span>
-        <div class="plan-cta"><a href="#optin" data-plan="semestral">Quiero este plan</a></div>
-      </article>
-    </div>
-    <p class="plan-note rv rv-d2">Sin permanencia forzada · todas las clases quedan grabadas · horarios de Chile (America/Santiago)</p>
-  </div>
-</section>
-
 <!-- OPT-IN FORM -->
 <section class="sec optin" id="optin">
   <div class="optin-inner">
     <div class="rv">
       <div class="kicker">Reserva tu cupo</div>
       <h2>Da el primer paso <em>hoy</em>.</h2>
-      <p class="lead">Déjanos tus datos y te escribimos por WhatsApp para activar tu membresía en el plan que elegiste, resolver tus dudas y darte la bienvenida a la Tribu.</p>
+      <p class="lead">Déjanos tus datos para reservar tu lugar en la Tribu. En el siguiente paso eliges tu plan y activas tu membresía.</p>
     </div>
     <div id="formOk" class="form-ok">
       Listo. Te acabamos de agregar. Revisa tu WhatsApp en los próximos minutos y guarda nuestro número: <strong>+56 9 7590 5158</strong>.
@@ -600,7 +565,7 @@ p{font-family:var(--f-sans);font-weight:300;line-height:1.65;color:rgba(246,241,
       </div>
       <div class="form-err" id="formErr"></div>
       <button type="submit" id="submitBtn">
-        <span>Unirme a la Tribu</span>
+        <span>Continuar · Elegir mi plan</span>
         <svg viewBox="0 0 24 24"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
       </button>
       <p class="optin-fine">Al enviar aceptas recibir contenido de Flowback Fitness. Nada de spam. Puedes salirte cuando quieras.</p>
@@ -694,7 +659,7 @@ p{font-family:var(--f-sans);font-weight:300;line-height:1.65;color:rgba(246,241,
     /* Endpoint Hapee real cuando esté configurado. Por ahora simula y redirige. */
     setTimeout(function(){
       /* Aquí iría: fetch('https://services.leadconnectorhq.com/hooks/...', {method:'POST', body:JSON.stringify(payload), ...}); */
-      location.href='/gracias';
+      location.href='/pago';
     }, 700);
   });
 })();
