@@ -10,7 +10,7 @@
 <link rel="icon" type="image/png" href="assets/logos/flowback-logo.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Josefin+Sans:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,300;1,9..144,400;1,9..144,500&family=Manrope:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 <style>
 :root{
   --ink:#0a0a0a;
@@ -19,11 +19,13 @@
   --peach:#F9C475;
   --terracotta:#c96a3a;
   --line:rgba(255,255,255,.08);
-  --f-display:'Cormorant Garamond', Georgia, serif;
-  --f-sans:'Poppins', -apple-system, sans-serif;
-  --f-alt:'Josefin Sans', 'Poppins', sans-serif;
+  --f-display:'Fraunces', Georgia, serif;
+  --f-sans:'Manrope', -apple-system, BlinkMacSystemFont, sans-serif;
+  --f-alt:'Manrope', -apple-system, sans-serif;
   --ease:cubic-bezier(.2,.7,.15,1);
 }
+h1, h2, h3, .wa-title, .next-title, .persona-name{ font-variation-settings:"opsz" 144; }
+body{ font-feature-settings:"ss01","ss02","cv11"; letter-spacing:-.005em; }
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 html,body{overflow-x:hidden;max-width:100vw;background:var(--ink)}
 body{
